@@ -1,0 +1,16 @@
+<div id="sidebar" class="d-flex sidebar flex-column flex-shrink-0 p-3 bg-light">
+    <a href="/" class="d-flex brand">
+      <!-- <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg> -->
+      <span class="fs-4">Ani-Ind</span>
+    </a>
+    <hr>
+    <ul class="nav nav-pills flex-column mb-auto">
+      <% for(const list of li){ %>    
+        <li class="nav-item"><a class="nav-link text-capitalize <%= list.active === "true" ? "active" : "" %>" href="<%= list.href %>"><%= list.name %></a></li>
+      <% } %>
+    </ul>
+    <div class="text-center d-none d-md-inline" style="position: relative; top: 25px">
+      <button class="btn rounded-circle border-0" id="sidebarToggle" type="button"></button>
+  </div>
+  <hr>
+</div>

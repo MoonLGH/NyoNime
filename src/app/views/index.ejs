@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Ani-Ind</title>
+    <link rel="stylesheet" href="stylesheets/index.css">
+    <link rel="stylesheet" href="stylesheets/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body class="d-flex">
+    <div class="wrapper d-flex">
+        <%- include("./template/sidebar.ejs",{li:[{href:"./",name:"Home",active:"true"},{href:"/otakudesu",name:"Otakudesu"},{href:"/neonime",name:"NeoNime"}]}) %>
+        <div class="d-flex-column content-wrapper">
+            <div class="jumbotron">
+                <h1 class="text-center">Sources:</h1>
+                <div class="container text-center">
+                    <div class="row text-lists">
+                      <div class="col-sm">
+                        Otakudesu
+                        <hr>
+                        <a href="/otakudesu" class="btn btn-primary">Go to page</a>
+                      </div>
+                      <div class="col-sm">
+                        NeoNime
+                        <hr>
+                        <a href="/otakudesu" class="btn btn-primary">Go to page</a>
+                      </div>
+                      <div class="col-sm">
+                        Coming Soon
+                      </div>
+                    </div>
+                  </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="javascripts/bootstrap.min.js"></script>
+    <script src="javascripts/jquery.js"></script>
+    <script src="javascripts/theme.js"></script>
+    <script src="javascripts/index.js"></script>
+</body>
+
+</html>
