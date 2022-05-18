@@ -7,6 +7,9 @@ body {
   width: 100%;
 }
 
+.nav {
+  flex-wrap: nowrap!important;
+}
 #sidebar {
   width: 200px;
   height:100%;
@@ -15,10 +18,21 @@ body {
 
 @media (max-width: 480px) { 
   #sidebar {
-    width:8.5rem;
-    display:flex;
+    width:7.5rem;
     flex-flow:row nowrap;
+    padding: 0.5rem!important;
+    display:none!important;
   }
+  #sidebarToggleHide {
+    display:block!important;
+  }
+  #sidebar.toggled{
+    display:flex!important;
+  }
+  .sidebar-toggled #sidebarToggleHide {
+    display:none!important;
+  }
+  
 }
 
 @media (min-width: 768px) {
@@ -34,14 +48,39 @@ body {
 }
 }
 .sidebar #sidebarToggle:after {
-font-weight: 900;
-content: "\f104";
-font-family: Font Awesome\ 5 Free;
-margin-right: 0.1rem;
+  font-weight: 900;
+  content: "\f104";
+  font-family: Font Awesome\ 5 Free;
+  margin-right: 0.1rem;
+  color: white;
+  font-size: 20px;
+}
+
+.sidebar-toggled #sidebarToggleHide {
+  display:block;
+}
+
+#sidebarToggle {
+  display: inline-flex!important;
+}
+
+#sidebarToggleHide {
+  color: white;
+  font-size: 35px;
+  font-weight: 900;
+  position: absolute;
+  display: none;
+}
+
+.sidebar.toggled {
+  display: none!important;
 }
 
 .wrapper {
-width:100%;
+  width:100%;
+}
+.content-wrapper {
+  width:100%;
 }
 
 .btn-primary {

@@ -9,8 +9,12 @@
         <li class="nav-item"><a class="nav-link text-capitalize <%= list.active === "true" ? "active" : "" %>" href="<%= list.href %>"><%= list.name %></a></li>
       <% } %>
     </ul>
-    <div class="text-center d-none d-md-inline" style="position: relative; top: 25px">
-      <button class="btn rounded-circle border-0" id="sidebarToggle" type="button"></button>
+    <div class="text-center d-inline" style="position: relative; top: 25px">
+      <button class="btn border-0" id="sidebarToggle" type="button"></button>
   </div>
   <hr>
+</div>
+
+<div class="text-center d-inline">
+  <button class="btn border-0" id="sidebarToggleHide" type="button"> > </button>
 </div>
