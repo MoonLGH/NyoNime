@@ -1,20 +1,15 @@
-<div id="sidebar" class="d-flex sidebar flex-column flex-shrink-0 p-3 bg-light">
-    <a href="/" class="d-flex brand">
-      <!-- <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg> -->
-      <span class="fs-4">Ani-Ind</span>
-    </a>
-    <hr>
-    <ul class="nav nav-pills flex-column mb-auto">
-      <% for(const list of li){ %>    
-        <li class="nav-item"><a class="nav-link text-capitalize <%= list.active === "true" ? "active" : "" %>" href="<%= list.href %>"><%= list.name %></a></li>
-      <% } %>
+<div class="drawer drawer-end">
+  <input id="my-drawer-4" type="checkbox" class="drawer-toggle" />
+  <div class="drawer-content">
+    <!-- Page content here -->
+    <label for="my-drawer-4" class="drawer-button btn btn-primary">Open drawer</label>
+  </div> 
+  <div class="drawer-side">
+    <label for="my-drawer-4" class="drawer-overlay"></label>
+    <ul class="menu p-4 overflow-y-auto w-80 bg-base-100 text-base-content">
+      <!-- Sidebar content here -->
+      <li><a>Sidebar Item 1</a></li>
+      <li><a>Sidebar Item 2</a></li>
     </ul>
-    <div class="text-center d-inline" style="position: relative; top: 25px">
-      <button class="btn border-0" id="sidebarToggle" type="button"></button>
   </div>
-  <hr>
-</div>
-
-<div class="text-center d-inline">
-  <button class="btn border-0" id="sidebarToggleHide" type="button"> > </button>
 </div>

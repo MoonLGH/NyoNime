@@ -8,7 +8,9 @@
     "clean": "rimraf dist/",
     "copy-files": "copyfiles -u 1 src/app/public/**/** src/app/views/** src/app/views/**/** dist/",
     "build": "npm run clean && tsc && npm run copy-files",
-    "start": "npm run build && node dist/index.js"
+    "tailwind": "tailwind -i dist/app/public/stylesheets/index.css -o dist/app/public/stylesheets/style.css",
+    "post-start": "npm run build && npm run tailwind",
+    "start": "npm run post-start && node dist/index.js"
   },
   "repository": {
     "type": "git",
@@ -38,6 +40,13 @@
     "express": "^4.18.1",
     "http": "^0.0.1-security",
     "https": "^1.0.0",
-    "rimraf": "^3.0.2"
+    "rimraf": "^3.0.2",
+    "autoprefixer": "^10.4.7",
+    "daisyui": "^2.15.1",
+    "flowbite": "^1.5.1",
+    "parcel": "^2.6.0",
+    "postcss": "^8.4.14",
+    "postcss-purgecss": "^2.0.3",
+    "tailwindcss": "^3.0.24"
   }
 }
