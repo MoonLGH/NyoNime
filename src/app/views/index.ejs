@@ -8,9 +8,9 @@
     <link rel="stylesheet" href="stylesheets/style.css">
 </head>
 
-<body>
-        <%- include("./template/sidebar.ejs",{li:[{href:"./",name:"Home",active:"true"},{href:"/otakudesu",name:"Otakudesu"},{href:"/neonime",name:"NeoNime"}]}) %>
-
+<body class="bg-keqing-main">
+        <%- include("./template/sidebar.ejs",{active:"home"}) %>
+        <h1 class="text-white text-xl">Hello WOrld</h1>
 </body>
 
 </html>

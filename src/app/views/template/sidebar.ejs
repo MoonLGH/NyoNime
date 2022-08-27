@@ -1,15 +1,18 @@
-<div class="drawer drawer-end">
-  <input id="my-drawer-4" type="checkbox" class="drawer-toggle" />
-  <div class="drawer-content">
+<div class="drawer drawer-mobile">
+  <input id="Sidebar" type="checkbox" class="drawer-toggle" />
+  <div class="drawer-content fixed top-0">
     <!-- Page content here -->
-    <label for="my-drawer-4" class="drawer-button btn btn-primary">Open drawer</label>
+    <label for="Sidebar" class="btn btn-primary drawer-button lg:hidden text-white bg-keqing-tresier3 text-keqing-secondary hover:bg-keqing-tresier3 hover:text-black">Menu</label>
+   
   </div> 
   <div class="drawer-side">
-    <label for="my-drawer-4" class="drawer-overlay"></label>
-    <ul class="menu p-4 overflow-y-auto w-80 bg-base-100 text-base-content">
+    <label for="Sidebar" class="drawer-overlay"></label> 
+    <ul class="bg-keqing-secondary menu p-4 overflow-y-auto w-80 text-base-content">
       <!-- Sidebar content here -->
-      <li><a>Sidebar Item 1</a></li>
-      <li><a>Sidebar Item 2</a></li>
+      <li><a class="text-center text-xl <%= active === "home" ? "active" : "" %>" href="/">NyoNime</a></li>
+      <li><a class="hover:bg-keqing-tresier text-white <%= active === "otakudesu" ? "active" : "" %>" href="/otakudesu">Otakudesu</a></li>
+      <li><a class="hover:bg-keqing-tresier text-white <%= active === "neonime" ? "active" : "" %>" href="/neonime">Neonime</a></li>
     </ul>
+  
   </div>
 </div>
